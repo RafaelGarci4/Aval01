@@ -2,8 +2,8 @@ package q07;
 
 public class user {
 
-    private String nome;
-    private String senha;
+    private String nome = "Rafael";
+    private String senha = "12345";
 
 
 
@@ -34,5 +34,6 @@ public class user {
 
         return resp;
     }
+
 }
 
