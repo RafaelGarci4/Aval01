@@ -2,12 +2,12 @@ package q08;
 
 public class Funcionario {
     String nome = "";
-    double salario = 0.00;
-    double abono = 0.00;
+    private double salario = 0.00;
+    private  double abono = 0.00;
 
-    double liquido = 0.00;
+    private double liquido = 0.00;
 
-    boolean condition;
+    private boolean condition;
 
     //     Funcionario (int tamanho){
 //        Funcionario[] asas = new Funcionario[tamanho];

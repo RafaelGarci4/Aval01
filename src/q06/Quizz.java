@@ -33,6 +33,10 @@ public class Quizz extends Perguntas {
 
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
     public int getAcertadas() {
         return acertadas;
     }
@@ -44,7 +48,7 @@ public class Quizz extends Perguntas {
     String pontuacao() {
 
         String resp = "";
-        resp = "\nUsuario: " + userName + "\nAcertos: " + acertadas + "\nErros: " + erradas + "\n";
+        resp = "\nUsuario: " + getUserName() + "\nAcertos: " + getAcertadas() + "\nErros: " + getErradas() + "\n";
         return resp;
     }
 
@@ -56,16 +60,16 @@ public class Quizz extends Perguntas {
     void popular() {
 
         Perguntas[] arrayDePerguntas = new Perguntas[10];
-        arrayDePerguntas[0] = new Perguntas("Pergunta 1", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[1] = new Perguntas("Pergunta 2", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[2] = new Perguntas("Pergunta 3", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[3] = new Perguntas("Pergunta 4", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[4] = new Perguntas("Pergunta 5", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[5] = new Perguntas("Pergunta 6", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[6] = new Perguntas("Pergunta 7", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[7] = new Perguntas("Pergunta 8", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[8] = new Perguntas("Pergunta 9", new String[]{"a", "b", "c", "d"}, "b");
-        arrayDePerguntas[9] = new Perguntas("Pergunta 10", new String[]{"a", "b", "c", "d"}, "b");
+        arrayDePerguntas[0] = new Perguntas("O que o mito a caixa de pandora queria explicar?", new String[]{"A origem dos bens", "A origem dos males", "A origem de pandora", "A origem do Olimpo"}, "b");
+        arrayDePerguntas[1] = new Perguntas("Quando Ícaro morreu, a ilha de Creta começou a se chamar o que?", new String[]{"Icaro", "Dedalo", "Icaria", "Rio de Janeiro"}, "c");
+        arrayDePerguntas[2] = new Perguntas("Zeus é filho de quem?", new String[]{"Urano", "Poseidon", "Pedro", "Cronos"}, "d");
+        arrayDePerguntas[3] = new Perguntas("De acordo com a mitologia grega, quem foi o primeiro deus?", new String[]{"Pablo", "Caos", "Zeus", "Urano"}, "b");
+        arrayDePerguntas[4] = new Perguntas("Quem são os 3 deuses principais?", new String[]{"Zeus, Poseidon, Hades", "Apolo, Afrodite, Hera", "Hermes, Atena, Ares", "Uguinho, Zezinho, Luizinho"}, "a");
+        arrayDePerguntas[5] = new Perguntas("Quem é a esposa de Zeus?", new String[]{"Hera", "Atena", "Afrodite", "Micalateia"}, "a");
+        arrayDePerguntas[6] = new Perguntas("Por quem a ninfa eco se apaixonou?", new String[]{"Hercules", "Perseu", "Narciso", "Luizera"}, "c");
+        arrayDePerguntas[7] = new Perguntas("Quem matou a Medusa?", new String[]{"Atena", "Perseu", "Hercules", "Capitao Nascimento"}, "b");
+        arrayDePerguntas[8] = new Perguntas("Quem é deus dos titãs e deus do tempo?", new String[]{"Hermes", "Relogius", "Hades", "Cronos"}, "d");
+        arrayDePerguntas[9] = new Perguntas("Com quem Urano teve filhos?", new String[]{"Persefone", "Afrodite", "Gaia", "Cervosia"}, "c");
 
         nPerguntas = arrayDePerguntas;
 
