@@ -1,7 +1,7 @@
 package q08;
 
 public class Funcionario {
-    String nome = "";
+    private String nome = "";
     private double salario = 0.00;
     private  double abono = 0.00;
 
@@ -9,14 +9,6 @@ public class Funcionario {
 
     private boolean condition;
 
-    //     Funcionario (int tamanho){
-//        Funcionario[] asas = new Funcionario[tamanho];
-//    }
-//
-//    Funcionario(String nome, double salario){
-//       this.nome = nome;
-//       this.salario = salario;
-//    }
     public String getNome() {
         return nome;
     }

@@ -34,6 +34,7 @@ public class principal extends Funcionario{
         //Instanciar lista de funcionarios
         Funcionario[] listaFuncionarios = new Funcionario[n];
 
+        //Chama a funcao com a lista vazia
         cadastrarFunc(n,read,listaFuncionarios );
 
         for (int i =0; i < n; i++){

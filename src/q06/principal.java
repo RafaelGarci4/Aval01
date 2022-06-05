@@ -1,8 +1,11 @@
 package q06;
 
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 import java.util.Scanner;
-public class principal extends Quizz{
 
+public class principal extends Quizz{
     public static void main(String[] args) throws Exception{
         Quizz quizz = new Quizz();
 
@@ -13,7 +16,7 @@ public class principal extends Quizz{
         do {
             System.out.println("atividade avaliativa 06 : Quizz\n");
             System.out.println("Selecione alguma das opcoes para progredir\n");
-            System.out.println("1) Comecar Quizz \n 2) Sair do Quizz\n");
+            System.out.println("| 1) Comecar Quizz |\n| 2) Sair do Quizz |\n");
 
             option = reader.nextInt();
 
@@ -37,7 +40,7 @@ public class principal extends Quizz{
         for (int i = 0; i <= 9 ; i++){
             System.out.println(esseQuiz[i]);
             System.out.println("\nSelecione sua alternativa : ");
-           String alternativa =  resposta.nextLine();
+           String alternativa =  resposta.nextLine().toLowerCase(Locale.ROOT);
            quizz.checkPergunta(alternativa,i);
         }
 
