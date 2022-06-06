@@ -14,12 +14,14 @@ public class principal extends Quizz{
 
         int option;
         do {
+            //Iniciando pelo menu
             System.out.println("atividade avaliativa 06 : Quizz\n");
             System.out.println("Selecione alguma das opcoes para progredir\n");
             System.out.println("| 1) Comecar Quizz |\n| 2) Sair do Quizz |\n");
-
+            //ler a opcao do usuario
             option = reader.nextInt();
 
+            //iniciar o quizz
             if (option == 1 ) {
 
                 String nome;
@@ -31,12 +33,13 @@ public class principal extends Quizz{
                 quizz.popular();
 
             }
-
+        //se nenhuma das duas for selecionada repetir
         } while ((option != 1 && option != 2));
 
         Perguntas[] esseQuiz = quizz.getnPerguntas();
         Scanner resposta = new Scanner(System.in);
 
+        //mostrar o quizz com as alternativas
         for (int i = 0; i <= 9 ; i++){
             System.out.println(esseQuiz[i]);
             System.out.println("\nSelecione sua alternativa : ");
