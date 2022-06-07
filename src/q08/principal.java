@@ -26,11 +26,14 @@ public class principal extends Funcionario{
         }
     }
     public static void main(String[] args) {
+
         //Novo Scanner
         Scanner read = new Scanner(System.in);
+
         //Ler numero de funcionario a cadastrar
         System.out.print("Numero de funcionarios: ");
         int n = read.nextInt();
+
         //Instanciar lista de funcionarios
         Funcionario[] listaFuncionarios = new Funcionario[n];
 

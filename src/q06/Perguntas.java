@@ -6,8 +6,8 @@ import java.util.List;
 
 class Perguntas {
 
-    String enunciado;
-    String[] alternativas;
+    private String enunciado;
+   private String[] alternativas;
    private String resposta;
     // List <String> lista;
 
@@ -24,7 +24,7 @@ class Perguntas {
      * */
     Perguntas() {
         alternativas = new String[4];
-        // lista = new ArrayList<>();
+
     }
 
     void setEnunciado(String enunciado) {
