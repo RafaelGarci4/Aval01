@@ -2,10 +2,10 @@ package q08;
 
 public class Funcionario {
     private String nome = "";
-    private double salario = 0.00;
-    private  double abono = 0.00;
+    private double salario ;
+    private  double abono  ;
 
-    private double liquido = 0.00;
+    private double liquido ;
 
     private boolean condition;
 

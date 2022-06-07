@@ -1,10 +1,12 @@
 package q06;
 
+import javax.management.InvalidAttributeValueException;
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class principal extends Quizz{
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws InputMismatchException {
         Quizz quizz = new Quizz();
 
         Scanner reader = new Scanner(System.in);
@@ -16,6 +18,7 @@ public class principal extends Quizz{
             System.out.println("Selecione alguma das opcoes para progredir\n");
             System.out.println("| 1) Comecar Quizz |\n| 2) Sair do Quizz |\n");
             //ler a opcao do usuario
+
             option = reader.nextInt();
 
 
@@ -46,7 +49,7 @@ public class principal extends Quizz{
 
             System.out.println(quizz.pontuacao());
         }else{
-
+            System.out.println("Obrigado por jogar");
         }
 
 
