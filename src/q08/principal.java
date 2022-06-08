@@ -17,16 +17,19 @@ public class principal extends Funcionario{
             String nome = read.nextLine();
             f.setNome(nome);
             try {
+
             System.out.println("Insira o salario do funcionario ("+f.getNome()+") :");
 
                double salario = read.nextDouble();
                f.setSalario(salario);
+                listaFuncionarios[i] = f;
+
            }catch (InputMismatchException e){
                System.out.println("valor indevido");
            }
 
 
-            listaFuncionarios[i] = f;
+
 
         }
     }
